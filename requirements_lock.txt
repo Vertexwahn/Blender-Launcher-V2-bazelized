@@ -26,9 +26,6 @@ distro==1.9.0 \
     --hash=sha256:2fa77c6fd8940f116ee1d6b94a2f90b13b5ea8d019b98bc8bafdcabcdd9bdbed \
     --hash=sha256:7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2
     # via -r requirements.in
-evdev==1.9.2 \
-    --hash=sha256:5d3278892ce1f92a74d6bf888cc8525d9f68af85dbe336c95d1c87fb8f423069
-    # via pynput
 h11==0.16.0 \
     --hash=sha256:4e35b956cf45792e4caa5885e69fba00bdbc6ffafbfa020300e549b208ee5ff1 \
     --hash=sha256:63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86
@@ -196,6 +193,66 @@ markdown==3.10 \
 pynput==1.7.7 \
     --hash=sha256:afc43f651684c98818de048abc76adf9f2d3d797083cb07c1f82be764a2d44cb
     # via -r requirements.in
+pyobjc-core==12.1 \
+    --hash=sha256:01c0cf500596f03e21c23aef9b5f326b9fb1f8f118cf0d8b66749b6cf4cbb37a \
+    --hash=sha256:177aaca84bb369a483e4961186704f64b2697708046745f8167e818d968c88fc \
+    --hash=sha256:2bb3903f5387f72422145e1466b3ac3f7f0ef2e9960afa9bcd8961c5cbf8bd21 \
+    --hash=sha256:453b191df1a4b80e756445b935491b974714456ae2cbae816840bd96f86db882 \
+    --hash=sha256:818bcc6723561f207e5b5453efe9703f34bc8781d11ce9b8be286bb415eb4962 \
+    --hash=sha256:844515f5d86395b979d02152576e7dee9cc679acc0b32dc626ef5bda315eaa43 \
+    --hash=sha256:93418e79c1655f66b4352168f8c85c942707cb1d3ea13a1da3e6f6a143bacda7 \
+    --hash=sha256:c918ebca280925e7fcb14c5c43ce12dcb9574a33cccb889be7c8c17f3bcce8b6
+    # via
+    #   pyobjc-framework-applicationservices
+    #   pyobjc-framework-cocoa
+    #   pyobjc-framework-coretext
+    #   pyobjc-framework-quartz
+pyobjc-framework-applicationservices==12.1 \
+    --hash=sha256:1f72e20009a4ebfd5ed5b23dc11c1528ad6b55cc63ee71952ddb2a5e5f1cb7da \
+    --hash=sha256:8a5d2845249b6a85ba9e320a9848468c3f8cd6f59605a9a43f406a7810eaa830 \
+    --hash=sha256:bd1f4dbb38234a24ae6819f5e22485cf7dd3dd4074ff3bf9a9fdb4c01a3b4a38 \
+    --hash=sha256:bdddd492eeac6d14ff2f5bd342aba29e30dffa72a2d358c08444da22129890e2 \
+    --hash=sha256:c06abb74f119bc27aeb41bf1aef8102c0ae1288aec1ac8665ea186a067a8945b \
+    --hash=sha256:c4fd1b008757182b9e2603a63c6ffa930cc412fab47294ec64260ab3f8ec695d \
+    --hash=sha256:c8f6e2fb3b3e9214ab4864ef04eee18f592b46a986c86ea0113448b310520532 \
+    --hash=sha256:f43c9a24ad97a9121276d4d571aa04a924282c80d7291cfb3b29839c3e2013a8
+    # via pynput
+pyobjc-framework-cocoa==12.1 \
+    --hash=sha256:03342a60fc0015bcdf9b93ac0b4f457d3938e9ef761b28df9564c91a14f0129a \
+    --hash=sha256:547c182837214b7ec4796dac5aee3aa25abc665757b75d7f44f83c994bcb0858 \
+    --hash=sha256:5556c87db95711b985d5efdaaf01c917ddd41d148b1e52a0c66b1a2e2c5c1640 \
+    --hash=sha256:5a3dcd491cacc2f5a197142b3c556d8aafa3963011110102a093349017705118 \
+    --hash=sha256:6ba1dc1bfa4da42d04e93d2363491275fb2e2be5c20790e561c8a9e09b8cf2cc \
+    --hash=sha256:914b74328c22d8ca261d78c23ef2befc29776e0b85555973927b338c5734ca44 \
+    --hash=sha256:9b880d3bdcd102809d704b6d8e14e31611443aa892d9f60e8491e457182fdd48 \
+    --hash=sha256:f52228bcf38da64b77328787967d464e28b981492b33a7675585141e1b0a01e6
+    # via
+    #   pyobjc-framework-applicationservices
+    #   pyobjc-framework-coretext
+    #   pyobjc-framework-quartz
+pyobjc-framework-coretext==12.1 \
+    --hash=sha256:14100d1e39efb30f57869671fb6fce8d668f80c82e25e7930fb364866e5c0dab \
+    --hash=sha256:1c8315dcef6699c2953461d97117fe81402f7c29cff36d2950dacce028a362fd \
+    --hash=sha256:4f6742ba5b0bb7629c345e99eff928fbfd9e9d3d667421ac1a2a43bdb7ba9833 \
+    --hash=sha256:782a1a9617ea267c05226e9cd81a8dec529969a607fe1e037541ee1feb9524e9 \
+    --hash=sha256:7afe379c5a870fa3e66e6f65231c3c1732d9ccd2cd2a4904b2cd5178c9e3c562 \
+    --hash=sha256:7cbb2c28580e6704ce10b9a991ccd9563a22b3a75f67c36cf612544bd8b21b5f \
+    --hash=sha256:d246fa654bdbf43bae3969887d58f0b336c29b795ad55a54eb76397d0e62b93c \
+    --hash=sha256:e0adb717738fae395dc645c9e8a10bb5f6a4277e73cba8fa2a57f3b518e71da5
+    # via pyobjc-framework-applicationservices
+pyobjc-framework-quartz==12.1 \
+    --hash=sha256:0cc08fddb339b2760df60dea1057453557588908e42bdc62184b6396ce2d6e9a \
+    --hash=sha256:19f99ac49a0b15dd892e155644fe80242d741411a9ed9c119b18b7466048625a \
+    --hash=sha256:27f782f3513ac88ec9b6c82d9767eef95a5cf4175ce88a1e5a65875fee799608 \
+    --hash=sha256:42d306b07f05ae7d155984503e0fb1b701fecd31dcc5c79fe8ab9790ff7e0de0 \
+    --hash=sha256:53b84e880c358ba1ddcd7e8d5ea0407d760eca58b96f0d344829162cda5f37b3 \
+    --hash=sha256:629b7971b1b43a11617f1460cd218bd308dfea247cd4ee3842eb40ca6f588860 \
+    --hash=sha256:7730cdce46c7e985535b5a42c31381af4aa6556e5642dc55b5e6597595e57a16 \
+    --hash=sha256:c6f312ae79ef8b3019dcf4b3374c52035c7c7bc4a09a1748b61b041bb685a0ed
+    # via
+    #   pynput
+    #   pyobjc-framework-applicationservices
+    #   pyobjc-framework-coretext
 pyside6-essentials==6.10.1 \
     --hash=sha256:4d1d248644f1778f8ddae5da714ca0f5a150a5e6f602af2765a7d21b876da05c \
     --hash=sha256:9555a48e8f0acf63fc6a23c250808db841b28a66ed6ad89ee0e4df7628752674 \
@@ -214,10 +271,6 @@ python-dateutil==2.9.0.post0 \
     # via
     #   dateparser
     #   webdav4
-python-xlib==0.33 \
-    --hash=sha256:55af7906a2c75ce6cb280a584776080602444f75815a7aff4d287bb2d7018b32 \
-    --hash=sha256:c3534038d42e0df2f1392a1b30a15a4ff5fdc2b86cfa94f072bf11b10a164398
-    # via pynput
 pytz==2025.2 \
     --hash=sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3 \
     --hash=sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00
@@ -360,7 +413,6 @@ six==1.17.0 \
     # via
     #   pynput
     #   python-dateutil
-    #   python-xlib
     #   xlib
 soupsieve==2.8 \
     --hash=sha256:0cc76456a30e20f5d7f2e14a98a4ae2ee4e5abdc7c5ea0aafe795f344bc7984c \

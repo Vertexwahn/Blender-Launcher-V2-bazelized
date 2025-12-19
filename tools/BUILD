@@ -8,3 +8,11 @@ py_binary(
     deps = [requirement("pyside6-essentials")],
     visibility = ["//visibility:public"],
 )
+
+py_binary(
+    name = "generate_resources_bazel",
+    srcs = ["generate_resources_bazel.py"],
+    data = ["//source/resources:resource_data"],
+    deps = [requirement("pyside6-essentials")],
+    visibility = ["//visibility:public"],
+)

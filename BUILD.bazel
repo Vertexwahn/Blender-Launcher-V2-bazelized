@@ -1,12 +1,25 @@
-load("@rules_python//python:defs.bzl", "py_binary")
+load("@rules_python//python:defs.bzl", "py_binary", "py_library")
 load("@rules_python//python:pip.bzl", "compile_pip_requirements")
 load("@blender_launcher_pip//:requirements.bzl", "requirement")
 
-# Placeholder resources_rc module
+# Generate global.qss and resources_rc.py
+genrule(
+    name = "generate_resources",
+    srcs = [
+        "//source/resources:qrc_file",
+        "//source/resources:css_files",
+        "//source/resources:resource_data",
+    ],
+    outs = ["resources_rc.py"],
+    cmd = "$(execpath //tools:generate_resources_bazel) $(location resources_rc.py) $(location //source/resources:qrc_file) $(locations //source/resources:css_files)",
+    tools = ["//tools:generate_resources_bazel"],
+)
+
+# resources_rc module
 py_library(
     name = "resources_rc",
-    srcs = ["source/resources_rc.py"],
-    imports = ["source"],
+    srcs = [":generate_resources"],
+    imports = ["."],
 )
 
 compile_pip_requirements(
